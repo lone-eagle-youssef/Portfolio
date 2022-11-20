@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test Description">
+    <title>El-Black</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <p>Loading </p>
+    </div>
+    <div class="toup justify-content-center align-items-center"><i class="fa-solid fa-arrow-up-long"></i></div>
+    <div class="overlay"></div>
+    <header class="w-100">
+      <div class="container d-flex align-items-center py-4">
+        <div class="logo col-6 d-flex align-items-center"><a class="text-decoration-none" href="#">{El-Black}</a></div>
+        <ul class="links p-0 m-0 col-6 d-none d-lg-flex justify-content-between">
+          <li><a class="text-decoration-none" href="#home">home</a></li>
+          <li><a class="text-decoration-none" href="#about">about</a></li>
+          <li><a class="text-decoration-none" href="#skills">skills</a></li>
+          <li><a class="text-decoration-none" href="#services">services</a></li>
+          <li><a class="text-decoration-none" href="#portfolio">portfolio</a></li>
+          <li><a class="text-decoration-none" href="#contactme">contactme</a></li>
+          <li> <i class="theme sun uil uil-sun active" onclick="sunny()"></i><i class="theme moon uil uil-moon" onclick="dark()"></i></li>
+        </ul>
+        <div class="megamenu-icon col-6 d-lg-none justify-content-end d-flex align-items-center"><i class="open-menu uil uil-apps"></i><i class="close-menu uil uil-times"></i><i class="theme sun ps-3 uil uil-sun active" onclick="sunny()"></i><i class="theme moon ps-3 uil uil-moon" onclick="dark()"></i></div>
+        <ul class="megamenu p-0 m-0 d-lg-none d-flex position-absolute py-3">
+          <li class="col-4 d-flex justify-content-center align-items-center p-3 flex-column">
+            <div class="icon"><i class="uil uil-estate"></i></div><a class="text-decoration-none" href="#home">home</a>
+          </li>
+          <li class="col-4 d-flex justify-content-center align-items-center p-3 flex-column">
+            <div class="icon"><i class="uil uil-user"></i></div><a class="text-decoration-none" href="#about">about</a>
+          </li>
+          <li class="col-4 d-flex justify-content-center align-items-center p-3 flex-column">
+            <div class="icon"><i class="uil uil-file-alt"></i></div><a class="text-decoration-none" href="#skills">skills</a>
+          </li>
+          <li class="col-4 d-flex justify-content-center align-items-center p-3 flex-column">
+            <div class="icon"><i class="uil uil-briefcase-alt"></i></div><a class="text-decoration-none" href="#services">services</a>
+          </li>
+          <li class="col-4 d-flex justify-content-center align-items-center p-3 flex-column">
+            <div class="icon"><i class="uil uil-scenery"></i></div><a class="text-decoration-none" href="#portfolio">portfolio</a>
+          </li>
+          <li class="col-4 d-flex justify-content-center align-items-center p-3 flex-column">
+            <div class="icon"><i class="uil uil-message"></i></div><a class="text-decoration-none" href="#contactme">contactme</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="home" id="home">
+      <div class="container d-grid d-lg-flex align-items-center">
+        <ul class="social-media h-lg-75 col-lg-2 d-flex flex-column justify-content-between px-0 align-items-center">
+          <li><a href="https://www.facebook.com/lone.eagle.519/" alt="Facebook" target="_blank"><i class="uil uil-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/lone_eagle_official/" alt="Instagram" target="_blank"><i class="uil uil-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/yousef-elblack-9abb87232/" alt="LinkedIn" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+          <li><a href="https://t.me/Yousef_El_Black" alt="Telegram" target="_blank"><i class="uil uil-telegram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCXkRI9AYACkykCYu-R5b81A" alt="Youtube" target="_blank"><i class="uil uil-youtube"></i></a></li>
+          <li><a href="https://github.com/YousefEl-Black" alt="Github" target="_blank"><i class="uil uil-github"></i></a></li>
+        </ul>
+        <div class="text col-lg-5 px-3 h-lg-50 d-flex flex-column justify-content-between">
+          <div class="title">
+            <h1>Hello, my name is  <span class="name">Yousef Aboalata</span></h1>
+            <h1 class="d-flex align-items-center">I'm a <span class="work"></span></h1>
+            <div class="content">High level experience in web design and development knowledge, producing quality work.</div>
+          </div>
+          <div class="contact-btn"><a class="btn rounded-pill px-4 py-2 my-3" href="#contactme">Contact Me<i class="ps-2 uil uil-message"></i></a></div>
+        </div>
+        <div class="image col-lg-5"><img class="img-fluid" src="imgs/blob.png" alt="Yousef Aboalata Photo"></div>
+      </div>
+    </div>
+    <div class="about w-100 py-3 d-flex flex-column" id="about">
+      <div class="main-title d-flex flex-column align-items-center">
+        <h2>About Me</h2>
+        <p>My introduction</p>
+      </div>
+      <div class="container d-flex flex-column align-items-center py-5 ">
+        <div class="content pb-5 col-6">Web developer, with extensive knowledge and years of experience, working in web technologies and UI / UX design delivering quality work.</div>
+        <div class="r-side col-6 text-center">
+          <ul class="analysis ps-0 py-4 d-flex flex-wrap gap-4 justify-content-center justify-content-md-between">
+            <li class="d-flex flex-column align-items-center">
+              <div class="num">03+</div>
+              <div class="text d-flex flex-column align-items-center"><span>Years </span><span>experience</span></div>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <div class="num">13+</div>
+              <div class="text d-flex flex-column align-items-center"><span>Completed</span><span>projects</span></div>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <div class="num">04+</div>
+              <div class="text d-flex flex-column align-items-center"><span>Companies</span><span>worked</span></div>
+            </li>
+          </ul>
+          <div class="cv py-4"><a class="btn rounded-pill px-4" href="media/cv.pdf" download>Download CV<i class="uil uil-download-alt ps-2"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="skills" id="skills">
+      <div class="main-title d-flex flex-column align-items-center">
+        <h2>My Skills</h2>
+        <p>Front End Developer</p>
+      </div>
+      <div class="container">
+        <ul class="skill-analysis p-0">
+          <li>
+            <div class="name"><span>HTML</span><span>90%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="90%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>CSS</span><span>85%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="85%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>JavaScript</span><span>60%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="60%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>JSON</span><span>80%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="80%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>AJAX</span><span>90%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="90%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>Bootstrap</span><span>85%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="85%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>PugJs</span><span>80%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="80%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>SASS</span><span>95%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="95%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>GulpJs</span><span>65%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="65%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>Git</span><span>80%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="80%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>Node JS</span><span>90%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="90%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>Typescript</span><span>95%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="95%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>PostgreSQL</span><span>65%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="65%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>Express.js</span><span>80%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="80%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>Jasmine</span><span>85%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="85%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>AWS Cloud</span><span>70%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="70%"></span></div>
+          </li>
+          <li>
+            <div class="name"><span>CircleCI</span><span>80%</span></div>
+            <div class="myrow"><span style="width: 0;" data-width="80%"></span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="services w-100 py-4 d-flex flex-column" id="sevices">
+      <div class="main-title d-flex flex-column align-items-center">
+        <h2>Services</h2>
+        <p>What I offer</p>
+      </div>
+      <div class="container">
+        <div class="cards d-flex gap-3 flex-md-row flex-column">
+          <div class="card col-md-4">
+            <div class="card-body ps-4">
+              <div class="card-icon mt-5 py-3"><i class="uil uil-tachometer-fast-alt"></i></div>
+              <h5 class="card-title">Performance</h5>
+              <ul class="card-text performance-text">
+                <div class="card-text-title d-flex align-items-center justify-content-between">
+                  <h5>Performance</h5><i class="uil uil-times fs-4" data-close="performance"></i>
+                </div>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Smallest file possible</p>
+                </li>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">It works on all types of browsers</p>
+                </li>
+              </ul><a class="card-more ps-0 btn d-flex align-items-center" data-open="performance">View More<i class="ps-2 fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+          <div class="card col-md-4">
+            <div class="card-body ps-4">
+              <div class="card-icon mt-5 py-3"><i class="fa-solid fa-code"></i></div>
+              <h5 class="card-title">Coding</h5>
+              <ul class="card-text coding-text">
+                <div class="card-text-title d-flex align-items-center justify-content-between">
+                  <h5>Coding</h5><i class="uil uil-times fs-4" data-close="coding"></i>
+                </div>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Submit a Clean HTML file</p>
+                </li>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Submit a Clean Javascript file</p>
+                </li>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Submit a Clean CSS file</p>
+                </li>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Dynamic codes</p>
+                </li>
+              </ul><a class="card-more ps-0 btn d-flex align-items-center" data-open="coding">View More<i class="ps-2 fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+          <div class="card col-md-4">
+            <div class="card-body ps-4">
+              <div class="card-icon mt-5 py-3"><i class="fa-solid fa-truck-fast"></i></div>
+              <h5 class="card-title">Delivery</h5>
+              <ul class="card-text delivery-text">
+                <div class="card-text-title d-flex align-items-center justify-content-between">
+                  <h5>Delivery</h5><i class="uil uil-times fs-4" data-close="delivery"></i>
+                </div>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Fast delivery</p>
+                </li>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Compressed version</p>
+                </li>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Inspect before receiving</p>
+                </li>
+                <li class="d-flex align-items-center gap-2 py-2"><i class="uil uil-check-circle"></i>
+                  <p class="d-flex align-items-center justify-content-center m-0">Safe delivery</p>
+                </li>
+              </ul><a class="card-more ps-0 btn d-flex align-items-center" data-open="delivery">View More<i class="ps-2 fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio py-4" id="portfolio">
+      <div class="main-title d-flex flex-column align-items-center">
+        <h2>Portfolio</h2>
+        <p>Most recent work</p>
+      </div>
+      <div class="carousel slide" id="carouselExampleIndicators" data-bs-ride="true">
+        <div class="carousel-indicators d-none d-md-flex">
+          <button class="active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="item-content d-flex flex-column flex-md-row gap-4 align-items-center">
+              <div class="image col-md-6"><img class="img-fluid" src="imgs/manage.jpg"></div>
+              <div class="content d-flex d-md-block flex-column align-items-center">
+                <h4 class="title py-3">Manage</h4>
+                <p class="text w-75">Bring everyone together to build better products. Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                <div class="demo"><a class="btn px-3 d-flex align-items-center rounded-pill" href="https://yousefel-black.github.io/Manage/">Demo<i class="fa-solid fa-arrow-right-long ps-2"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="item-content d-flex flex-column flex-md-row gap-4 align-items-center">
+              <div class="image col-md-6"><img class="img-fluid" src="imgs/bookmark.jpg"></div>
+              <div class="content d-flex d-md-block flex-column align-items-center">
+                <h4 class="title py-3">Bookmark</h4>
+                <p class="text w-75">A Simple Bookmark Manager. A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <div class="demo"><a class="btn px-3 d-flex align-items-center rounded-pill" href="https://yousefel-black.github.io/Bookmark/">Demo<i class="fa-solid fa-arrow-right-long ps-2"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="item-content d-flex flex-column flex-md-row gap-4 align-items-center">
+              <div class="image col-md-6"><img class="img-fluid" src="imgs/blogr.jpg"></div>
+              <div class="content d-flex d-md-block flex-column align-items-center">
+                <h4 class="title py-3">Blogr</h4>
+                <p class="text w-75">A modern publishing platform. Grow your audience and build your online brand</p>
+                <div class="demo"><a class="btn px-3 d-flex align-items-center rounded-pill" href="https://yousefel-black.github.io/Blogr/">Demo<i class="fa-solid fa-arrow-right-long ps-2"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="item-content d-flex flex-column flex-md-row gap-4 align-items-center">
+              <div class="image col-md-6"><img class="img-fluid" src="imgs/easybank.jpg"></div>
+              <div class="content d-flex d-md-block flex-column align-items-center">
+                <h4 class="title py-3">Easybank</h4>
+                <p class="text w-75">Next generation digital banking. Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+                <div class="demo"><a class="btn px-3 d-flex align-items-center rounded-pill" href="https://yousefel-black.github.io/Easybank/">Demo<i class="fa-solid fa-arrow-right-long ps-2"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+      </div>
+    </div>
+    <div class="contact py-5" id="contact">
+      <div class="container d-flex">
+        <div class="content col-6 d-flex flex-column justify-content-around">
+          <h4>You have a new project</h4>
+          <p class="py-3">Contact me now and get a 30% discount on your new project.</p>
+          <div class="contact-btn"><a class="btn px-4 d-flex align-items-center rounded-pill" href="mailto:loneeagle519@gmail.com">Contact Me<i class="uil uil-message ps-2 py-2"></i></a></div>
+        </div>
+        <ul class="social-media col-6">
+          <li><a href="https://www.facebook.com/lone.eagle.519/" alt="Facebook" target="_blank"><i class="uil uil-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/lone_eagle_official/" alt="Instagram" target="_blank"><i class="uil uil-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/yousef-elblack-9abb87232/" alt="LinkedIn" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+          <li><a href="https://t.me/Yousef_El_Black" alt="Telegram" target="_blank"><i class="uil uil-telegram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCXkRI9AYACkykCYu-R5b81A" alt="Youtube" target="_blank"><i class="uil uil-youtube"></i></a></li>
+          <li><a href="https://github.com/YousefEl-Black" alt="Github" target="_blank"><i class="uil uil-github"></i></a></li>
+          <li><a href="https://chatwith.io/s/el-black" alt="WhatsApp" target="_blank"><i class="uil uil-whatsapp"></i></a></li>
+          <li><a href="tel:+201062995781" alt="Phone" target="_blank"><i class="uil uil-phone"></i></a></li>
+          <li><a href="https://www.snapchat.com/add/yousefel-black" alt="Snapchat" target="_blank"><i class="uil uil-snapchat-square"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contactme py-5" id="contactme">
+      <div class="main-title d-flex flex-column align-items-center">
+        <h2>Contact Me</h2>
+        <p>Get in touch</p>
+      </div>
+      <div class="container d-flex flex-column flex-lg-row py-3">
+        <div class="l-side col-lg-6 py-4 required">
+          <div class="item d-flex align-items-start gap-3 py-3">
+            <div class="icon"><i class="uil uil-phone"></i></div>
+            <div class="text">
+              <h5 class="title">Call Me</h5>
+              <div class="info">+201062995781</div>
+            </div>
+          </div>
+          <div class="item d-flex align-items-start gap-3 py-3">
+            <div class="icon"><i class="uil uil-envelope-alt"></i></div>
+            <div class="text">
+              <h5 class="title">Email</h5>
+              <div class="info">loneeagle519@gmail.com</div>
+            </div>
+          </div>
+          <div class="item d-flex align-items-start gap-3 py-3">
+            <div class="icon"><i class="uil uil-map-marker"></i></div>
+            <div class="text">
+              <h5 class="title">Location</h5>
+              <div class="info">Egypt - Kafr-elsheikh Beila</div>
+            </div>
+          </div>
+        </div>
+        <form class="r-side col-lg-6 d-flex flex-column gap-3" method="post"> 
+          <input placeholder="Name" type="text" required minlength="5" maxlength="16">
+          <input placeholder="Email" type="mail" required>
+          <input placeholder="Project" type="text" required>
+          <textarea placeholder="Massage" required maxlength="250"></textarea>
+          <input class="btn" type="submit" value="Send Massage" disabled>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="content py-4 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+          <div class="logo d-flex flex-column align-items-center me-lg-5"><a class="text-decoration-none" href="#">{El-Black}</a>
+            <p>Full-Stack Developer</p>
+          </div>
+          <ul class="links d-flex flex-column flex-lg-row justify-content-around ps-0 text-center gap-3">
+            <li><a class="text-decoration-none" href="#home">home</a></li>
+            <li><a class="text-decoration-none" href="#about">about</a></li>
+            <li><a class="text-decoration-none" href="#skills">skills</a></li>
+            <li><a class="text-decoration-none" href="#services">services</a></li>
+            <li><a class="text-decoration-none" href="#portfolio">portfolio</a></li>
+            <li><a class="text-decoration-none" href="#contactme">contactme</a></li>
+          </ul>
+        </div>
+        <div class="copyright text-center py-4 text-wrap">&copy; Yousef Aboalata, All right reserved. </div>
+      </div>
+    </footer>
+    <div class="d-block d-lg-none" style="height: 78px"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.1/typed.js" integrity="sha512-gzF8XoDiuj0LJF/tiCdKroMwo3c9uQ+4aB5zSWPAwmtGjcGdaT4scRzzydupXI15qVpD1PuoxRamaVOV9KnVkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+  </body>
+</html>

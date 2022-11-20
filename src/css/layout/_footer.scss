@@ -1,0 +1,36 @@
+footer {
+  background-color: $mainColor;
+  .content {
+    width: 100%;
+    .logo {
+      width: fit-content;
+      a {
+        color: var(--white);
+        font-size: 30px;
+        font-weight: 500;
+      }
+      p {
+        color: var(--white);
+        opacity: 0.5;
+      }
+    }
+    ul.links {
+      flex: 1;
+      li {
+        a {
+          font-size: 18px;
+          color: var(--white);
+          text-transform: capitalize;
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    color: var(--white);
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,104 @@
+header {
+  bottom: 0;
+  position: fixed;
+  font-family: $font;
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 0px 25px 35px 10px var(--black);
+  z-index: 999;
+  @include breakpoints(lg) {
+    top: 0;
+    position: relative;
+    box-shadow: none;
+  }
+  .container{
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      a {
+        color: var(--black);
+        transition: 0.3s;
+        &:hover {
+          color: $mainColor;
+        }
+      }
+    }
+    ul.links {
+      li {
+        a {
+          color: var(--black);
+          text-transform: capitalize;
+          transition: 0.3s;
+          &:hover {
+            color: $mainColor;
+          }
+        }
+        i {
+          cursor: pointer;
+          user-select: none;
+          padding: 0 5px;
+          font-size: 20px;
+          color: var(--black);
+          transition: 0.3s;
+          &.theme {
+            opacity: 0.5;
+          }
+          &.theme.active {
+            color: $mainColor;
+            opacity: 1;
+          }    
+        }
+      }
+    }
+    .megamenu-icon {
+      i {
+        font-size:20px;
+        cursor: pointer;
+        transition: 0.3s;
+        color: var(--black);
+        &:hover {
+          color: $mainColor;
+        }
+      }
+      i.close-menu {
+        display: none;
+      }
+      i.theme {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+      i.theme.active {
+        opacity: 1;
+        color: $mainColor;
+      }
+    }
+    ul.megamenu {
+      top: 192px;
+      background-color: var(--white);
+      transition: 0.5s;
+      opacity: 0;
+      z-index: -999;
+      left: 0;
+      width: 100%;
+      flex-wrap: wrap;
+      li {
+        &:hover .icon {
+          color: $mainColor;
+        }
+        &:hover a {
+          color: $mainColor;
+        }
+        .icon {
+          cursor: pointer;
+          color: var(--black);
+          transition: 0.3s;
+        }
+        a {
+          color: var(--black);
+          text-transform: capitalize;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

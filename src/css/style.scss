@@ -1,0 +1,14 @@
+@import "./all.min";
+@import "./bootstrap.min";
+@import "./normalize";
+@import "./global.rules";
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/animation";
+@import "components/buttons";
+@import "components/title";
+@import "layout/header";
+// @import 'The Content Here';
+@import "pages/homepage";
+@import "layout/footer";

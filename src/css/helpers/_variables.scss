@@ -1,0 +1,13 @@
+:root {
+  --white: #fff;
+  --black: #212121;
+}
+
+body.dark {
+  --white: #212121;
+  --black: #fff;
+}
+
+$font:  'Prompt', sans-serif;
+$nameFont:  'Great Vibes', cursive;
+$mainColor: #2196f3;

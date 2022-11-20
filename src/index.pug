@@ -1,0 +1,313 @@
+include includes/variables
+doctype html
+html(lang="en")
+  include includes/head
+  body
+    .preloader
+      p Loading 
+    .toup(class="justify-content-center align-items-center")
+      i(class="fa-solid fa-arrow-up-long")
+    .overlay
+    include includes/header
+    #home.home
+      .container(class="d-grid d-lg-flex align-items-center")
+        ul.social-media(class="h-lg-75 col-lg-2 d-flex flex-column justify-content-between px-0 align-items-center")
+          li
+            a(href="https://www.facebook.com/lone.eagle.519/", alt="Facebook", target="_blank")
+              i(class="uil uil-facebook")
+          li
+            a(href="https://www.instagram.com/lone_eagle_official/", alt="Instagram", target="_blank")
+              i(class="uil uil-instagram")
+          li
+            a(href="https://www.linkedin.com/in/yousef-elblack-9abb87232/", alt="LinkedIn", target="_blank")
+              i(class="uil uil-linkedin")
+          li
+            a(href="https://t.me/Yousef_El_Black", alt="Telegram", target="_blank")
+              i(class="uil uil-telegram")
+          li
+            a(href="https://www.youtube.com/channel/UCXkRI9AYACkykCYu-R5b81A",alt="Youtube" , target="_blank")
+              i(class="uil uil-youtube")
+          li
+            a(href="https://github.com/YousefEl-Black",alt="Github" , target="_blank")
+              i(class="uil uil-github")
+        .text(class="col-lg-5 px-3 h-lg-50 d-flex flex-column justify-content-between")
+          .title
+            h1 Hello, my name is  
+              span.name Yousef Aboalata
+            h1(class="d-flex align-items-center") I'm a 
+              span.work
+            //- p Frontend Developer
+            .content.
+              High level experience in web design and development knowledge, producing quality work.
+          .contact-btn
+            a.btn(class="rounded-pill px-4 py-2 my-3", href="#contactme")
+              | Contact Me
+              i(class="ps-2 uil uil-message")
+        .image(class="col-lg-5")
+          img(src="imgs/blob.png", class="img-fluid", alt="Yousef Aboalata Photo")
+    #about.about(class="w-100 py-3 d-flex flex-column")
+      .main-title(class="d-flex flex-column align-items-center")
+        h2 About Me
+        p My introduction
+      .container(class="d-flex flex-column align-items-center py-5 ")
+        .content(class="pb-5 col-6").
+          Web developer, with extensive knowledge and years of experience, working in web technologies and UI / UX design delivering quality work.
+        .r-side(class="col-6 text-center")
+          ul.analysis(class="ps-0 py-4 d-flex flex-wrap gap-4 justify-content-center justify-content-md-between")
+            li(class="d-flex flex-column align-items-center")
+              .num 03+
+              .text(class="d-flex flex-column align-items-center")
+                span Years 
+                span experience
+            li(class="d-flex flex-column align-items-center")
+              .num 13+
+              .text(class="d-flex flex-column align-items-center")
+                span Completed
+                span projects
+            li(class="d-flex flex-column align-items-center")
+              .num 04+
+              .text(class="d-flex flex-column align-items-center")
+                span Companies
+                span worked
+          .cv(class="py-4")
+            a.btn(class="rounded-pill px-4", href="media/cv.pdf", download)
+              | Download CV
+              i(class="uil uil-download-alt ps-2")
+    #skills.skills
+      .main-title(class="d-flex flex-column align-items-center")
+        h2 My Skills
+        p Front End Developer
+      .container
+        ul.skill-analysis(class="p-0")
+          each skill in skills
+            li
+              .name
+                span=skill[0]
+                span=skill[1] + "%"
+              .myrow
+                span(style="width: 0;" ,data-width=skill[1] + "%")
+    #sevices.services(class="w-100 py-4 d-flex flex-column")
+      .main-title(class="d-flex flex-column align-items-center")
+        h2 Services
+        p What I offer
+      .container
+        .cards(class="d-flex gap-3 flex-md-row flex-column")
+          .card(class="col-md-4")
+            .card-body(class="ps-4")
+              .card-icon(class="mt-5 py-3")
+                i(class="uil uil-tachometer-fast-alt")
+              h5.card-title Performance
+              ul.card-text.performance-text
+                .card-text-title(class="d-flex align-items-center justify-content-between")
+                  h5 Performance
+                  i(class="uil uil-times fs-4", data-close="performance")
+                each txt in performanceList
+                  li(class="d-flex align-items-center gap-2 py-2")
+                    i(class="uil uil-check-circle")
+                    p(class="d-flex align-items-center justify-content-center m-0")= txt
+              a.card-more(class="ps-0 btn d-flex align-items-center", data-open="performance")
+                | View More
+                i(class="ps-2 fa-solid fa-arrow-right-long")
+          .card(class="col-md-4")
+            .card-body(class="ps-4")
+              .card-icon(class="mt-5 py-3")
+                i(class="fa-solid fa-code")
+              h5.card-title Coding
+              ul.card-text.coding-text
+                .card-text-title(class="d-flex align-items-center justify-content-between")
+                  h5 Coding
+                  i(class="uil uil-times fs-4", data-close="coding")
+                each txt in codingList
+                  li(class="d-flex align-items-center gap-2 py-2")
+                    i(class="uil uil-check-circle")
+                    p(class="d-flex align-items-center justify-content-center m-0")= txt
+              a.card-more(class="ps-0 btn d-flex align-items-center", data-open="coding")
+                | View More
+                i(class="ps-2 fa-solid fa-arrow-right-long")
+          .card(class="col-md-4")
+            .card-body(class="ps-4")
+              .card-icon(class="mt-5 py-3")
+                i(class="fa-solid fa-truck-fast")
+              h5.card-title Delivery
+              ul.card-text.delivery-text
+                .card-text-title(class="d-flex align-items-center justify-content-between")
+                  h5 Delivery
+                  i(class="uil uil-times fs-4", data-close="delivery")
+                each txt in deliveryList
+                  li(class="d-flex align-items-center gap-2 py-2")
+                    i(class="uil uil-check-circle")
+                    p(class="d-flex align-items-center justify-content-center m-0")= txt
+              a.card-more(class="ps-0 btn d-flex align-items-center", data-open="delivery")
+                | View More
+                i(class="ps-2 fa-solid fa-arrow-right-long")
+
+    #portfolio.portfolio(class="py-4")
+      .main-title(class="d-flex flex-column align-items-center")
+        h2 Portfolio
+        p Most recent work
+      div(id="carouselExampleIndicators", class="carousel slide", data-bs-ride="true")
+        div(class="carousel-indicators d-none d-md-flex")
+          button(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide-to="0", class="active", aria-current="true", aria-label="Slide 1")
+          button(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide-to="1", aria-label="Slide 2")
+          button(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide-to="2", aria-label="Slide 3")
+          button(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide-to="3", aria-label="Slide 4")
+        div(class="carousel-inner")
+          div(class="carousel-item active")
+            .item-content(class="d-flex flex-column flex-md-row gap-4 align-items-center")
+              .image(class="col-md-6")
+                img(class="img-fluid", src="imgs/manage.jpg")
+              .content(class="d-flex d-md-block flex-column align-items-center")
+                h4.title(class="py-3") Manage
+                p.text(class="w-75") Bring everyone together to build better products. Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+                .demo
+                  a.btn(class="px-3 d-flex align-items-center rounded-pill", href="https://yousefel-black.github.io/Manage/")
+                    | Demo
+                    i(class="fa-solid fa-arrow-right-long ps-2")
+          div(class="carousel-item")
+            .item-content(class="d-flex flex-column flex-md-row gap-4 align-items-center")
+              .image(class="col-md-6")
+                img(class="img-fluid", src="imgs/bookmark.jpg")
+              .content(class="d-flex d-md-block flex-column align-items-center")
+                h4.title(class="py-3") Bookmark
+                p.text(class="w-75") A Simple Bookmark Manager. A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+                .demo
+                  a.btn(class="px-3 d-flex align-items-center rounded-pill", href="https://yousefel-black.github.io/Bookmark/")
+                    | Demo
+                    i(class="fa-solid fa-arrow-right-long ps-2")
+          div(class="carousel-item")
+            .item-content(class="d-flex flex-column flex-md-row gap-4 align-items-center")
+              .image(class="col-md-6")
+                img(class="img-fluid", src="imgs/blogr.jpg")
+              .content(class="d-flex d-md-block flex-column align-items-center")
+                h4.title(class="py-3") Blogr
+                p.text(class="w-75") A modern publishing platform. Grow your audience and build your online brand
+                .demo
+                  a.btn(class="px-3 d-flex align-items-center rounded-pill", href="https://yousefel-black.github.io/Blogr/")
+                    | Demo
+                    i(class="fa-solid fa-arrow-right-long ps-2")
+          div(class="carousel-item")
+            .item-content(class="d-flex flex-column flex-md-row gap-4 align-items-center")
+              .image(class="col-md-6")
+                img(class="img-fluid", src="imgs/easybank.jpg")
+              .content(class="d-flex d-md-block flex-column align-items-center")
+                h4.title(class="py-3") Easybank
+                p.text(class="w-75") Next generation digital banking. Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+                .demo
+                  a.btn(class="px-3 d-flex align-items-center rounded-pill", href="https://yousefel-black.github.io/Easybank/")
+                    | Demo
+                    i(class="fa-solid fa-arrow-right-long ps-2")
+        button(class="carousel-control-prev", type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide="prev")
+          span(class="carousel-control-prev-icon" aria-hidden="true")
+          span(class="visually-hidden") Previous
+        button(class="carousel-control-next", type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide="next")
+          span(class="carousel-control-next-icon", aria-hidden="true")
+          span(class="visually-hidden") Next
+
+    #contact.contact(class="py-5")
+      .container(class="d-flex")
+        .content(class="col-6 d-flex flex-column justify-content-around")
+          h4 You have a new project
+          p(class="py-3") Contact me now and get a 30% discount on your new project.
+          .contact-btn
+            a.btn(class="px-4 d-flex align-items-center rounded-pill", href="mailto:loneeagle519@gmail.com")
+              | Contact Me
+              i(class="uil uil-message ps-2 py-2")
+        ul.social-media(class="col-6")
+          li
+            a(href="https://www.facebook.com/lone.eagle.519/", alt="Facebook", target="_blank")
+              i(class="uil uil-facebook")
+          li
+            a(href="https://www.instagram.com/lone_eagle_official/", alt="Instagram", target="_blank")
+              i(class="uil uil-instagram")
+          li
+            a(href="https://www.linkedin.com/in/yousef-elblack-9abb87232/", alt="LinkedIn", target="_blank")
+              i(class="uil uil-linkedin")
+          li
+            a(href="https://t.me/Yousef_El_Black", alt="Telegram", target="_blank")
+              i(class="uil uil-telegram")
+          li
+            a(href="https://www.youtube.com/channel/UCXkRI9AYACkykCYu-R5b81A",alt="Youtube" , target="_blank")
+              i(class="uil uil-youtube")
+          li
+            a(href="https://github.com/YousefEl-Black",alt="Github" , target="_blank")
+              i(class="uil uil-github")
+          li
+            a(href="https://chatwith.io/s/el-black",alt="WhatsApp" , target="_blank")
+              i(class="uil uil-whatsapp")
+          li
+            a(href="tel:+201062995781",alt="Phone" , target="_blank")
+              i(class="uil uil-phone")
+          li
+            a(href="https://www.snapchat.com/add/yousefel-black",alt="Snapchat" , target="_blank")
+              i(class="uil uil-snapchat-square")
+
+    #contactme.contactme(class="py-5")
+      .main-title(class="d-flex flex-column align-items-center")
+        h2 Contact Me
+        p Get in touch
+      .container(class="d-flex flex-column flex-lg-row py-3")
+        .l-side(class="col-lg-6 py-4 required")
+          .item(class="d-flex align-items-start gap-3 py-3")
+            .icon
+              i(class="uil uil-phone")
+            .text
+              h5.title Call Me
+              .info +201062995781
+          .item(class="d-flex align-items-start gap-3 py-3")
+            .icon
+              i(class="uil uil-envelope-alt")
+            .text
+              h5.title Email
+              .info loneeagle519@gmail.com
+          .item(class="d-flex align-items-start gap-3 py-3")
+            .icon
+              i(class="uil uil-map-marker")
+            .text
+              h5.title Location
+              .info Egypt - Kafr-elsheikh Beila
+        form.r-side(method="post", class="col-lg-6 d-flex flex-column gap-3") 
+          input(placeholder="Name", type="text", required, minlength="5", maxlength="16")
+          input(placeholder="Email", type="mail" required)
+          input(placeholder="Project", type="text" required)
+          textarea(placeholder="Massage" required, maxlength="250")
+          input(type="submit", class="btn" value="Send Massage", disabled) 
+
+    include includes/footer
+    div(style="height: 78px", class="d-block d-lg-none")
+    include includes/scripts
+    script(src="http://localhost:35729/livereload.js")
+
+
+
+//- <i class="uil uil-estate"></i> Home
+//- <i class="uil uil-user"></i> About
+//- <i class="uil uil-file-alt"></i> Skills
+//- <i class="uil uil-briefcase-alt"></i> Services
+//- <i class="uil uil-scenery"></i> Portfolio
+//- <i class="uil uil-message"></i> Contactme
+//- <i class="uil uil-facebook"></i> Facebook
+//- <i class="uil uil-instagram"></i> Instagram
+//- <i class="uil uil-github"></i> Github
+//- <i class="fa-brands fa-pinterest"></i> Pinterest
+//- <i class="uil uil-linkedin"></i> LinkedIn
+//- <i class="uil uil-snapchat-square"></i> Snapchat
+//- <i class="uil uil-telegram"></i> Telegram
+//- <i class="uil uil-whatsapp"></i> WhatsApp
+//- <i class="uil uil-youtube"></i> Youtube
+//- <i class="uil uil-phone"></i> Phone
+//- <i class="uil uil-times"></i> Close
+//- <i class="uil uil-apps"></i> Apps
+//- <i class="uil uil-download-alt"></i> Download
+//- <i class="fa-solid fa-arrow-right-long"></i> Arrow Right
+//- <i class="uil uil-tachometer-fast-alt"></i> Performance
+//- <i class="fa-solid fa-code"></i> Coding
+//- <i class="fa-solid fa-truck-fast"></i> Delivery
+//- <i class="uil uil-check-circle"></i> Check
+//- <i class="uil uil-envelope-alt"></i> Email
+//- <i class="uil uil-map-marker"></i> Location
+//- <i class="uil uil-sun"></i> Sun
+
+
+//- Dark Theme Done!
+//- Preload
+//- To Up Btn

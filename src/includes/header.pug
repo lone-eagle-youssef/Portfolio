@@ -1,0 +1,41 @@
+header(class="w-100")
+  .container(class="d-flex align-items-center py-4")
+    .logo(class="col-6 d-flex align-items-center")
+      a(href="#", class="text-decoration-none") {El-Black}
+    ul.links(class="p-0 m-0 col-6 d-none d-lg-flex justify-content-between")
+      each link in links
+        li
+          a(href="#" + link, class="text-decoration-none")=link
+      li 
+        i.theme.sun(class="uil uil-sun active", onclick="sunny()")
+        i.theme.moon(class="uil uil-moon", onclick="dark()")
+    .megamenu-icon(class="col-6 d-lg-none justify-content-end d-flex align-items-center")
+      i(class="open-menu uil uil-apps")
+      i(class="close-menu uil uil-times")
+      i.theme.sun(class="ps-3 uil uil-sun active", onclick="sunny()")
+      i.theme.moon(class="ps-3 uil uil-moon", onclick="dark()")
+    ul.megamenu(class="p-0 m-0 d-lg-none d-flex position-absolute py-3")
+      li(class="col-4 d-flex justify-content-center align-items-center p-3 flex-column")
+        .icon
+          i(class="uil uil-estate")
+        a(href="#home" class="text-decoration-none") home
+      li(class="col-4 d-flex justify-content-center align-items-center p-3 flex-column")
+        .icon
+          i(class="uil uil-user")
+        a(href="#about" class="text-decoration-none") about
+      li(class="col-4 d-flex justify-content-center align-items-center p-3 flex-column")
+        .icon
+          i(class="uil uil-file-alt")
+        a(href="#skills" class="text-decoration-none") skills
+      li(class="col-4 d-flex justify-content-center align-items-center p-3 flex-column")
+        .icon
+          i(class="uil uil-briefcase-alt")
+        a(href="#services" class="text-decoration-none") services
+      li(class="col-4 d-flex justify-content-center align-items-center p-3 flex-column")
+        .icon
+          i(class="uil uil-scenery")
+        a(href="#portfolio" class="text-decoration-none") portfolio
+      li(class="col-4 d-flex justify-content-center align-items-center p-3 flex-column")
+        .icon
+          i(class="uil uil-message")
+        a(href="#contactme" class="text-decoration-none") contactme
